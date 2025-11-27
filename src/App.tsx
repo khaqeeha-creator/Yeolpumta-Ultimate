@@ -1,4 +1,3 @@
-/// <reference types="vite/client" />
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
@@ -7,7 +6,8 @@ import Notifications from './components/Notifications';
 
 // Simplified mock start for browser environment
 async function enableMocking() {
-  if (import.meta.env.MODE !== 'test') {
+  // Cast import.meta to any to handle missing Vite type definitions for env
+  if ((import.meta as any).env.MODE !== 'test') {
     const { setupWorker } = await import('msw/browser');
     const { handlers } = await import('./api/msw-handlers');
     const worker = setupWorker(...handlers);
