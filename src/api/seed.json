@@ -1,0 +1,66 @@
+{
+  "user": {
+    "id": "u_001",
+    "name": "Playtester",
+    "avatar": null,
+    "streak": 6,
+    "xp": 4520,
+    "energy": 80
+  },
+  "dailyChallenge": {
+    "id": "c_007",
+    "title": "Bayes Marathon",
+    "difficulty": "ultimate",
+    "goalMinutes": 90,
+    "rewardXP": 500
+  },
+  "progress": {
+    "daily": 0.45,
+    "weekly": 0.62,
+    "monthly": 0.54
+  },
+  "tasks": [
+    {
+      "id":"t_001",
+      "title":"Probability: Bayes Theorem",
+      "difficulty":"ultimate",
+      "estimateMin":45,
+      "tags":["probability","math"],
+      "status":"doing",
+      "history":[{"date":"2025-11-24","outcome":"failed"}]
+    },
+    {
+      "id":"t_002",
+      "title":"Discrete Structures — Recurrence",
+      "difficulty":"hard",
+      "estimateMin":30,
+      "tags":["cs","theory"],
+      "status":"todo",
+      "history":[]
+    },
+    {
+      "id":"t_003",
+      "title":"Review Linear Algebra",
+      "difficulty":"normal",
+      "estimateMin":20,
+      "tags":["math"],
+      "status":"done",
+      "history":[]
+    }
+  ],
+  "analytics": {
+    "timeseries": [
+      {"date":"2025-10-27","accuracy":0.72,"speed":0.62,"xp":30},
+      {"date":"2025-10-28","accuracy":0.75,"speed":0.65,"xp":45},
+      {"date":"2025-10-29","accuracy":0.80,"speed":0.70,"xp":50},
+      {"date":"2025-10-30","accuracy":0.65,"speed":0.55,"xp":20},
+      {"date":"2025-11-01","accuracy":0.85,"speed":0.75,"xp":80},
+      {"date":"2025-11-02","accuracy":0.90,"speed":0.80,"xp":100}
+    ],
+    "heatmap": { "2025-11-01": 2, "2025-11-02": 3, "2025-11-03": 5, "2025-11-05": 1 }
+  },
+  "leaderboard": [
+    {"id":"u_002","name":"Rival","xp":9800,"sparkline":[10,15,12,20]},
+    {"id":"u_003","name":"Friend","xp":7600,"sparkline":[6,8,9,7]}
+  ]
+}
